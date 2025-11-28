@@ -3,85 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="ICON.ico" type="image/ico">
+    <link rel="icon" href="./logo.png" type="image/png">
     <title>Raj - Portfolio</title>
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
+    <nav>
+        <div class="navcontainer">
             <h1>Moinul Islam Raj</h1>
-            <p class="lead">Student</p>
+            <p>student</p>
         </div>
-    </header>
+    </nav>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <p class="text-center">
-                Welcome to my portfolio! I am a passionate student from bangladesh. I like programming, math and physics a lot. In this portfolio I have stored everything I've created so far.
+    <div class="container">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm <strong>Moinul Islam Raj</strong>, a student who enjoys programming and cybersecurity.
+                I like exploring Linux, understanding how systems work, and building small tools that make
+                everyday tasks easier.
+            </p>
+
+            <p>
+                I'm always learning something new — whether it’s improving my coding skills or experimenting
+                with security concepts — and I enjoy turning those lessons into practical projects.
             </p>
         </div>
-    </section>
 
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Projects</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="project mb-4">
-                        <h3>Messaging app</h3>
-                        <p>Its a chat app made with reactjs.</p>
-                        <a href="https://moinul-islam-raj.github.io/messages" target="_blank">Go</a>
-                    </div>
+        <div class="projects">
+            <h2>Projects</h2>
+
+            <div id="projectscontainer">
+                <div class="project">
+                    <h3>Messages</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus!</p>
+                    
+                    <form target="_blank" action="https://theraj0.github.io/messages">
+                        <button>Go</button>
+                    </form>
                 </div>
-                <div class="col-md-6">
-                    <div class="project mb-4">
-                        <h3>Meme Generator website!</h3>
-                        <p>Its a test portfolio made with reactjs.</p>
-                        <a href="https://moinul-islam-raj.github.io/meme-generator" target="_blank">Go</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project mb-4">
-                        <h3>Java GUI Apps</h3>
-                        <p>Desktop java apps.</p>
-                        <a href="https://github.com/Moinul-Islam-Raj/Basic_Java_GUI_Projects" target="_blank">Go</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project mb-4">
-                        <h3>Website using reactjs</h3>
-                        <p>Its a test portfolio made with reactjs.</p>
-                        <a href="https://moinul-islam-raj.github.io/portfolio" target="_blank">Go</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project mb-4">
-                        <h3>3D Donut Render</h3>
-                        <p>I made a 3D Donut Model and this is it's render in blender.</p>
-                        <form action="/render.png">
-                            <img src="render.png" alt="donut render" width="100%">
-                        </form>
-                        <!-- <video width="100%" height="auto" controls>
-                            <source src="project2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> -->
-                    </div>
-                </div> 
             </div>
         </div>
-    </section>
 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact</h2>
-            <p>Email: moinulislammail1@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/Moinul-Islam-Raj" target="_blank">github.com/Moinul-Islam-Raj/</a></p>
-            <p>Facebook: <a href="https://facebook.com/Raj4198" target="_blank">facebook.com/Raj4198/</a></p>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>Pentesting & Security</h3>
+                    <p>
+                        Reconnaissance with <span class="highlight">Nmap</span>, packet analysis with <span class="highlight">Wireshark</span>, 
+                        web testing via <span class="highlight">Burp Suite</span>, password attacks using <span class="highlight">Hydra</span> & <span class="highlight">Hashcat</span>, 
+                        hands-on experience with various <span class="highlight">Kali Linux</span> tools.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>
+                        <span class="highlight">Python</span> for scripting and automation, <span class="highlight">Arduino/C</span> for hardware projects, 
+                        <span class="highlight">C++</span> and <span class="highlight">JavaScript</span> (<span class="highlight">React</span>, <span class="highlight">Node.js</span>) for apps and small projects.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Operating Systems & Dev Tools</h3>
+                    <p>
+                        Daily use of <span class="highlight">Debian</span>/<span class="highlight">Kali Linux</span>, system recovery, package management, 
+                        troubleshooting, with basic experience in <span class="highlight">Docker</span>, <span class="highlight">Git</span>, and offline <span class="highlight">Android APK</span> creation.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Creative & Multimedia Tools</h3>
+                    <p>
+                        <span class="highlight">Unity</span> (game development), <span class="highlight">Blender</span> (3D modeling), 
+                        <span class="highlight">GIMP</span> (image editing), <span class="highlight">Kdenlive</span> (video editing), and small web applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to reach out, feel free to message me anytime.</p>
+            <a class="contact-btn" href="mailto:moinulislammail1@gmail.com">Send Email</a>
+        </section>
+    </div>
+    <footer>
+        <div class="social">
+            <div>
+                <a href="https://github.com/TheRaj0">
+                    <svg aria-hidden="true" height="32" viewBox="0 0 16 16" version="1.1" width="32" data-octicon="mark-github" class="octicon octicon-mark-github" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    <p>GitHub</p>
+                </a>
+
+                <a href="https://github.com/TheRaj0">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" class="icon icons8-Facebook-Filled" >    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path></svg>
+                    <p>Facebook</p>
+                </a>
+            </div>
         </div>
-    </section>
+    </footer>
+    
+    <script type="module" src="./index.js"></script>
 </body>
-
 </html>
