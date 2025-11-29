@@ -42,9 +42,6 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
 
@@ -212,24 +209,32 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 footer {
     width: 100%;
     background-color: var(--primary-color);
-    padding: 40px 0;
+    padding: 40px 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 footer .social > div {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 
 footer a {
-    flex-grow: 1;
     text-decoration: none;
     color: var(--secondary-text-color);
     display: flex;
@@ -248,6 +253,14 @@ footer a svg {
 footer a:hover {
     transform: translateY(-5px);
     color: var(--third-color);
+}
+
+footer > p {
+    color: #aaa;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
 
 .highlight {
