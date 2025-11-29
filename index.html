@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./logo.png" type="image/png">
-    <title>Raj - Portfolio</title>
+    
+    <meta name="title" content="Portfolio: Raj">
+    <meta name="description" content="Programmer and technology enthusiast.">
+
+    <!-- Open Graph (Facebook, Discord, LinkedIn, Messenger, etc.) -->
+    <meta property="og:title" content="Portfolio: Raj">
+    <meta property="og:description" content="Programmer and technology enthusiast.">
+    <meta property="og:image" content="https://theraj0.github.io/portfolio/thumbnail.jpg">
+    <meta property="og:url" content="https://theraj0.github.io/portfolio">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio: Raj">
+    <meta name="twitter:description" content="Programmer and technology enthusiast.">
+    <meta name="twitter:image" content="https://theraj0.github.io/portfolio/thumbnial.jpg">
 </head>
 <body>
     <nav>
@@ -15,72 +31,31 @@
         </div>
     </nav>
 
+    <div class="background"></div>
+
     <div class="container">
-        <div class="about">
+        <section class="about">
             <h2>About Me</h2>
             <p>
-                I'm <strong>Moinul Islam Raj</strong>, a student who enjoys programming and cybersecurity.
+                I'm <span class="highlight">Moinul Islam Raj</span>, a student who enjoys programming and cybersecurity.
                 I like exploring Linux, understanding how systems work, and building small tools that make
                 everyday tasks easier.
             </p>
 
             <p>
-                I'm always learning something new — whether it’s improving my coding skills or experimenting
+                I'm always learning something new — whether it's improving my coding skills or experimenting
                 with security concepts — and I enjoy turning those lessons into practical projects.
             </p>
-        </div>
+        </section>
 
-        <div class="projects">
+        <section class="projects">
             <h2>Projects</h2>
-
-            <div id="projectscontainer">
-                <div class="project">
-                    <h3>Messages</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus!</p>
-                    
-                    <form target="_blank" action="https://theraj0.github.io/messages">
-                        <button>Go</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+            <div id="projectscontainer"></div>
+        </section>
 
         <section class="skills">
             <h2>Skills</h2>
-            <div class="skill-grid">
-                <div class="skill-card">
-                    <h3>Pentesting & Security</h3>
-                    <p>
-                        Reconnaissance with <span class="highlight">Nmap</span>, packet analysis with <span class="highlight">Wireshark</span>, 
-                        web testing via <span class="highlight">Burp Suite</span>, password attacks using <span class="highlight">Hydra</span> & <span class="highlight">Hashcat</span>, 
-                        hands-on experience with various <span class="highlight">Kali Linux</span> tools.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Programming</h3>
-                    <p>
-                        <span class="highlight">Python</span> for scripting and automation, <span class="highlight">Arduino/C</span> for hardware projects, 
-                        <span class="highlight">C++</span> and <span class="highlight">JavaScript</span> (<span class="highlight">React</span>, <span class="highlight">Node.js</span>) for apps and small projects.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Operating Systems & Dev Tools</h3>
-                    <p>
-                        Daily use of <span class="highlight">Debian</span>/<span class="highlight">Kali Linux</span>, system recovery, package management, 
-                        troubleshooting, with basic experience in <span class="highlight">Docker</span>, <span class="highlight">Git</span>, and offline <span class="highlight">Android APK</span> creation.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Creative & Multimedia Tools</h3>
-                    <p>
-                        <span class="highlight">Unity</span> (game development), <span class="highlight">Blender</span> (3D modeling), 
-                        <span class="highlight">GIMP</span> (image editing), <span class="highlight">Kdenlive</span> (video editing), and small web applications.
-                    </p>
-                </div>
-            </div>
+            <div id="skillscontainer" class="skill-grid"></div>
         </section>
 
         <section class="contact">
@@ -110,4 +85,3 @@
     <script type="module" src="./index.js"></script>
 </body>
 </html>
-

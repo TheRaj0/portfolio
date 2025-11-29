@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #06233d;
-    --secondary-color: #0a284d;
-    --third-color: #2b89d1;
+    --primary-color: #1e375c;
+    --secondary-color: #2a5685e5;
+
+    --secondary-low-opacity: #1a2e44d3;
+
+    --third-color: #0aa5d4;
+    --fourth-color: #4fbbd6;
     --text-color: white;
-    --secondary-text-color: #b6b6b6;
+    --secondary-text-color: #abc3e7;
 }
 
 html, body, * {
@@ -20,14 +24,28 @@ body {
     color: var(--text-color);
 }
 
+.background {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+}
+
 nav {
-    background-color: var(--primary-color);
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
 
 .navcontainer h1 {
@@ -59,7 +77,7 @@ nav {
 
 .container > *{
     border-radius: 8px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     padding: 25px;
     min-width: min(100%, 600px);
     width: 70%;
@@ -67,6 +85,11 @@ nav {
     flex-direction: column;
     gap: 10px;
     line-height: 1.8;
+    /* From https://css.glass */
+    background: var(--secondary-low-opacity);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
 }
 
 h2 {
@@ -98,7 +121,7 @@ h2 {
     gap: 10px;
 }
 .project {
-    background-color: var(--secondary-color);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -135,7 +158,7 @@ h2 {
 
 .project button {
     width: 100%;
-    background-color: var(--third-color);
+    background: linear-gradient(to right, var(--third-color), var(--fourth-color));
     border: none;
     padding: 8px 0;
     color: white;
@@ -158,7 +181,7 @@ h2 {
 }
 
 .skill-card {
-    background: var(--secondary-color);
+    background: transparent;
     padding: 18px;
     border-radius: 8px;
 }
@@ -195,7 +218,6 @@ footer {
     width: 100%;
     background-color: var(--primary-color);
     padding: 40px 0;
-    margin-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     justify-content: center;
@@ -230,8 +252,8 @@ footer a:hover {
 
 .highlight {
     font-weight: 600;           
-    color: var(--third-color);  
-    background-color: rgba(26, 188, 156, 0.1); 
+    color: var(--fourth-color);  
+    background-color: rgba(26, 137, 188, 0.2); 
     padding: 2px 4px;
     border-radius: 3px;
 }
